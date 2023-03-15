@@ -132,7 +132,6 @@ struct TabLayout: Layout {
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         let rows = getRows(proposalWidth: bounds.width, subViews: subviews)
 
-        print("koo----- minY:\(bounds.minY)")
         var index = 0
         rows.forEach { row in
 
