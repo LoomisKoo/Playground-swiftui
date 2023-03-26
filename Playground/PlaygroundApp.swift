@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct PlaygroundApp: App {
+
     var body: some Scene {
         WindowGroup {
 //            TabAndList()
 //            TabPinnedListView()
-            TabLayoutView()
+//            TabLayoutView()
+            ChatGptView()
+//            MovieView(userData: UserData())
         }
     }
 }

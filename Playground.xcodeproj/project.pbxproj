@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5009462A29CF8F1C00C5903C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5009462929CF8F1C00C5903C /* ChatView.swift */; };
+		5009462C29CF915600C5903C /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5009462B29CF915600C5903C /* OpenAI.swift */; };
 		503C433F29C1271400EBCFA5 /* TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C433E29C1271400EBCFA5 /* TabLayout.swift */; };
+		503C434629C2B9A900EBCFA5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C434529C2B9A900EBCFA5 /* Common.swift */; };
+		503C434829C4035C00EBCFA5 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C434729C4035C00EBCFA5 /* CalculateView.swift */; };
+		503C434B29C72BF500EBCFA5 /* ScrollBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C434A29C72BF500EBCFA5 /* ScrollBackgroundView.swift */; };
 		504D8D8D29B89A560052B2D4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D8D8C29B89A560052B2D4 /* CardView.swift */; };
 		504D8D8F29B89A8C0052B2D4 /* OffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D8D8E29B89A8C0052B2D4 /* OffsetModifier.swift */; };
 		504D8D9129B89AE60052B2D4 /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504D8D9029B89AE60052B2D4 /* OffsetKey.swift */; };
@@ -22,7 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5009462929CF8F1C00C5903C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		5009462B29CF915600C5903C /* OpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
 		503C433E29C1271400EBCFA5 /* TabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLayout.swift; sourceTree = "<group>"; };
+		503C434529C2B9A900EBCFA5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		503C434729C4035C00EBCFA5 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
+		503C434A29C72BF500EBCFA5 /* ScrollBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollBackgroundView.swift; sourceTree = "<group>"; };
 		504D8D8C29B89A560052B2D4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		504D8D8E29B89A8C0052B2D4 /* OffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifier.swift; sourceTree = "<group>"; };
 		504D8D9029B89AE60052B2D4 /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
@@ -48,10 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5009461E29CF8D1A00C5903C /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				5009462929CF8F1C00C5903C /* ChatView.swift */,
+				5009462B29CF915600C5903C /* OpenAI.swift */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
 		503C433C29C126F000EBCFA5 /* TabLayout */ = {
 			isa = PBXGroup;
 			children = (
 				503C433D29C126FF00EBCFA5 /* view */,
+				503C434529C2B9A900EBCFA5 /* Common.swift */,
 			);
 			path = TabLayout;
 			sourceTree = "<group>";
@@ -62,6 +82,21 @@
 				503C433E29C1271400EBCFA5 /* TabLayout.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		503C434429C2B99E00EBCFA5 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		503C434929C407C900EBCFA5 /* simpleView */ = {
+			isa = PBXGroup;
+			children = (
+				503C434729C4035C00EBCFA5 /* CalculateView.swift */,
+			);
+			path = simpleView;
 			sourceTree = "<group>";
 		};
 		504D8D8729B899810052B2D4 /* extension */ = {
@@ -90,9 +125,13 @@
 		50952A0129B1CB02000EED7D /* Playground */ = {
 			isa = PBXGroup;
 			children = (
+				5009461E29CF8D1A00C5903C /* chat */,
+				503C434929C407C900EBCFA5 /* simpleView */,
+				503C434429C2B99E00EBCFA5 /* extension */,
 				503C433C29C126F000EBCFA5 /* TabLayout */,
 				50952A1029B1CF22000EED7D /* TabAndList */,
 				50952A0229B1CB02000EED7D /* PlaygroundApp.swift */,
+				503C434A29C72BF500EBCFA5 /* ScrollBackgroundView.swift */,
 				50952A0429B1CB02000EED7D /* ContentView.swift */,
 				50952A0629B1CB04000EED7D /* Assets.xcassets */,
 				50952A0829B1CB04000EED7D /* Preview Content */,
@@ -217,12 +256,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5009462C29CF915600C5903C /* OpenAI.swift in Sources */,
 				50AE2E2329B60CB10019638B /* TabPinnedListView.swift in Sources */,
 				503C433F29C1271400EBCFA5 /* TabLayout.swift in Sources */,
 				50952A0529B1CB02000EED7D /* ContentView.swift in Sources */,
 				50952A1B29B1D0EA000EED7D /* TabModel.swift in Sources */,
+				5009462A29CF8F1C00C5903C /* ChatView.swift in Sources */,
+				503C434629C2B9A900EBCFA5 /* Common.swift in Sources */,
+				503C434B29C72BF500EBCFA5 /* ScrollBackgroundView.swift in Sources */,
 				50952A1929B1D0BF000EED7D /* TabAndList.swift in Sources */,
 				504D8D8F29B89A8C0052B2D4 /* OffsetModifier.swift in Sources */,
+				503C434829C4035C00EBCFA5 /* CalculateView.swift in Sources */,
 				504D8D9129B89AE60052B2D4 /* OffsetKey.swift in Sources */,
 				50952A0329B1CB02000EED7D /* PlaygroundApp.swift in Sources */,
 				504D8D8D29B89A560052B2D4 /* CardView.swift in Sources */,

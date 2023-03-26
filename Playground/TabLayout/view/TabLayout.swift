@@ -14,24 +14,27 @@ struct TabLayoutView: View {
         VStack(spacing: 0) {
             picker()
             tabLayout()
+            
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .background(.blue)
     }
 
     // MARK: makeItemView
+
     @ViewBuilder
     fileprivate func makeItemView(_ text: String) -> some View {
         Text(text)
             .font(.title2.bold())
             .padding(.horizontal, 10)
             .padding(.vertical, 5)
-            .background(.white.opacity(0.9))
+            .background(.white)
             .cornerRadius(6)
             .id(text)
     }
 
     // MARK: makePicker
+
     fileprivate func picker() -> some View {
         return Picker("", selection: $alignment) {
             Text("leading")
@@ -45,6 +48,7 @@ struct TabLayoutView: View {
     }
 
     // MARK: makeTabLayout
+
     @ViewBuilder
     fileprivate func tabLayout() -> some View {
         TabLayout(alignment: alignment) {
@@ -67,6 +71,7 @@ struct TabLayoutView: View {
 }
 
 // MARK: TabLayout
+
 struct TabLayout: Layout {
     var vSpacing: CGFloat = 10
     var alignment: TextAlignment = .trailing
